@@ -1,0 +1,63 @@
+# Go Backend .gitignore
+
+# Binaries for programs and plugins
+# The name of the executable will often be the name of the directory
+# containing the main package, or whatever is set with `go build -o <name>`.
+# It's a good practice to add your specific binary name here, e.g., `my-app`
+*.exe
+*.exe~
+*.dll
+*.so
+*.a
+*.out
+
+# Test binaries
+*.test
+
+# Profile and coverage data
+*.prof
+*.cprof
+*.pprof
+coverage.out
+coverage.html
+
+# Dependency directories
+# These are managed by `go mod` and can be recreated with `go mod vendor`.
+# It's a common practice to not commit the vendor directory.
+# If you prefer to commit vendor, remove the line below.
+vendor/
+
+# Environment variables
+# Store sensitive information like API keys and database credentials in .env files.
+# A .env.example file with placeholders should be committed instead.
+.env
+.env.*
+!.env.example
+
+# Log files
+*.log
+logs/
+
+# IDE and editor specific files
+# Visual Studio Code
+.vscode/
+# GoLand / JetBrains
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Vim
+*.swp
+*.swo
+*~
+
+# OS-generated files
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
